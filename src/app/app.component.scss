@@ -1,0 +1,68 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+// ----------------------------
+// ANIMATIONS
+// ----------------------------
+
+.menu {
+    ul li {
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+}
+
+// ----------------------------
+// NAV
+// ----------------------------
+nav {
+    // calculating the header width removes the scroll bar and improves the user experience.
+    position: fixed;
+    width: 100%;
+    padding-top: 17px;
+    width: -moz-calc(100% + 16px);
+    height: 37px;
+    background: rgb(61, 62, 66);
+    font-size: 18px;
+    z-index: 2;
+}
+
+.header-spacer{
+    width: 100%;
+    height: 54px;
+}
+
+.menu-container {
+    position: relative;
+    max-width: 980px;
+    padding: 0 22px;
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    margin-right: 35px;
+    
+    &:last-child {
+    margin-right: 0;
+    }
+}
+
+ul li a {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+    sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 16px;
+    float: left;
+    
+    &:hover {
+    color: #969696;
+    }
+}
+}

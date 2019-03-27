@@ -1,0 +1,75 @@
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <div class="resume-wrapper" *ngIf="personalInformation !== undefined">
+      <section class="profile section-padding">
+          <div class="container">
+              <div class="picture-resume-wrapper">
+                  <div class="picture-resume">
+                      <span><img src="{{personalInformation.photoUrl}}" alt="" /></span>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+              <div class="name-wrapper">
+                  <h1>{{personalInformation.firstName}} <br />{{personalInformation.lastName}}</h1><!-- YOUR NAME AND LAST NAME  -->
+              </div>
+              <div class="clearfix"></div>
+              <div class="contact-info clearfix">
+                  <ul class="list-titles">
+                      <li>Mail</li>
+                      <li>Web</li>
+                      <li>Home</li>
+                  </ul>
+                  <ul class="list-content ">
+                      <li><a href="mailto:{{personalInformation.email}}">{{personalInformation.email}}</a></li> <!-- YOUR EMAIL -->
+                      <li><a href="{{personalInformation.url}}">{{personalInformation.url}}</a></li> <!-- YOUR WEBSITE  -->
+                      <li>{{personalInformation.city}}</li> <!-- YOUR STATE AND COUNTRY  -->
+                  </ul>
+              </div>
+              <div class="contact-presentation" *ngIf="personalInformation.about">
+                  <!-- YOUR PRESENTATION RESUME  -->
+                  <p><span class="bold">{{personalInformation.about.split(" ")[0]}}</span> {{personalInformation.about.substr(personalInformation.about.indexOf(" ") + 1)}}</p>
+              </div>
+          </div>
+      </section>
+
+      <section class="experience section-padding">
+          <div class="container">
+              <h3 class="experience-title">Experience</h3>
+
+              <div class="experience-wrapper">
+                <div *ngFor="let job of personalInformation.previousExperience">
+                  <div class="company-wrapper clearfix">
+                      <div class="experience-title">{{job.companyName}}</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                      <div class="time">{{job.dateRange}}</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                  </div>
+
+                  <div class="job-wrapper clearfix">
+                      <div class="experience-title">{{job.position}}</div> <!-- JOB TITLE  -->
+                      <div class="company-description">
+                          <ul>
+                              <li *ngFor="let experience of job.experiences">{{experience}}</li>
+                          </ul><!-- JOB DESCRIPTION  -->
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--Skill experience-->
+              <div class="section-wrapper clearfix">
+                  <h3 class="section-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
+                  <ul>
+                      <li class="skill-percentage" *ngFor="let skill of personalInformation.skills" [ngClass]="skill.confidence">{{skill.name}}</li>
+                  </ul>
+              </div>
+              <div class="section-wrapper clearfix">
+                  <h3 class="section-title">Hobbies</h3> <!-- DESCRIPTION OF YOUR HOBBIES -->
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo
+                      in, dignissim magna.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo
+                      in, dignissim magna.</p>
+              </div>
+
+          </div>
+      </section>
+
+      <div class="clearfix"></div>
+  </div>
