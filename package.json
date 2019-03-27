@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ng build --prod --base-href https://dakotahj.com"
+    "prod": "ng build --prod --base-href https://dakotahj.com/"
   },
   "private": true,
   "dependencies": {

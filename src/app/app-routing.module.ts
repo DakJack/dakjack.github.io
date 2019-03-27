@@ -6,8 +6,7 @@ import {CVComponent} from './cv/cv.component';
 const routes: Routes = [
   {
     path: '',
-    //component: HomePageComponent
-    component: CVComponent
+    component: HomePageComponent
   },
   {
     path: 'resume',
