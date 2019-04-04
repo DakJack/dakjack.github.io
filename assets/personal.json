@@ -1,103 +1,109 @@
 {
-    "about": "I'm a continually learning software developer. I've recently discovered a thorough enjoyment of writing software that interacts with the world through sensors. My expertise is in Microsoft .Net based development, I've been spending a lot of time with TypeScript and SharePoint Framework. I've built API's, I've built plant monitoring systems, I've dealt with SQL Server, SSIS, and a plethora of other technologies/frameworks/software’s. Reach out for more details!",
-    "city": "Grand Rapids, Mi",
-    "email": "contact@dakotahj.com",
-    "firstName": "Dakotah",
-    "hobbies": [
-        "Hanging out with my wife",
-        "Walking, biking, kayaking",
-        "Arduino & FreeRTOS development for home improvement"
-    ],
-    "lastName": "Jackson",
     "photoUrl": "assets/profile.jpg",
+    "firstName": "Dakotah",
+    "lastName": "Jackson",
+    "email": "contact@dakotahj.com",
+    "url": "dakotahj.com",
+    "city": "Grand Rapids, Mi",
     "previousExperience": [
         {
             "companyName": "C/D/H",
             "dateRange": "2016 - Present",
+            "position": "Software Developer",
             "experiences": [
                 "Consulting: Meet with clients to understand their need(s), clarify requirements and discuss proposed solutions",
                 "Server-side Development: Aggregating database information, processing and running complex calculations to return data from relevant API",
-                "Web Application Development: Organizing and structuring API data models, loading and transoforming data, and build user interface displays",
+                "Web Application Development: Organizing and structuring API data models, loading and transforming data, and build user interface displays",
                 "SharePoint Development: Build upon SharePoint Framework to provide value adding web parts"
-            ],
-            "position": "Software Developer"
+            ]
         },
         {
             "companyName": "Operation Mobilization",
             "dateRange": "2014 - 2016",
+            "position": "Missional Volunteer",
             "experiences": [
                 "Leading: Cared for a group of 12 - 16 international men, mentored on a day-to-day basis, facilitated communication to overcome cultural and personal barriers, and encouraged fellowship and unity",
-                "Hospitality: Aided in faciliation of short term mission stays for visitors",
+                "Hospitality: Aided in facilitation of short term mission stays for visitors",
                 "Studying: Obtained conversational fluency of Nepali language"
-            ],
-            "position": "Missional Volunteer"
+            ]
         },
         {
             "companyName": "Delta Defense",
             "dateRange": "2012 - 2014",
+            "position": "Email System Administrator",
             "experiences": [
                 "System Management: Handled the email queries, schedules, and template assembly for over 1.5 million contacts",
                 "Query Building: Created contact list queries based on specific audiences and locales",
                 "Collaboration: Worked closely with the marketing team to implement and verify desired templates and designs"
-            ],
-            "position": "Email System Administrator"
+            ]
         },
         {
             "companyName": "WebDevStudios",
             "dateRange": "Summer 2013",
+            "position": "WordPress development Intern",
             "experiences": [
                 "Development: Practiced basic development skills in PHP and HTML",
                 "Documentation: Reviewed code functionality and wrote necessary technical comments"
-            ],
-            "position": "WordPress development Intern"
+            ]
         }
     ],
     "skills": [
         {
+            "name": "C# .Net, VB .Net",
             "confidence": "eight",
-            "confidenceNum": 8,
-            "name": "C# .Net, VB .Net"
+            "confidenceNum": 8
         },
         {
-            "confidence": "five",
-            "confidenceNum": 4,
-            "name": "C, C++"
+            "name": "C, C++",
+            "confidence" : "five",
+            "confidenceNum": 5
         },
         {
-            "confidence": "nine",
-            "confidenceNum": 9,
-            "name": "JavaScript"
+            "name": "JavaScript",
+            "confidence" : "nine",
+            "confidenceNum": 9
         },
         {
-            "confidence": "eight",
-            "confidenceNum": 8,
-            "name": "HTML / CSS"
+            "name": "HTML / CSS",
+            "confidence" : "eight",
+            "confidenceNum": 8
         },
         {
-            "confidence": "eight",
-            "confidenceNum": 8,
-            "name": "TypeScript"
+            "name": "TypeScript",
+            "confidence" : "eight",
+            "confidenceNum": 8
         },
         {
-            "confidence": "eight",
-            "confidenceNum": 8,
-            "name": "Angular"
+            "name": "Angular",
+            "confidence" : "eight",
+            "confidenceNum": 8
         },
         {
-            "confidence": "eight",
-            "confidenceNum": 8,
-            "name": "Jquery"
+            "name": "Jquery",
+            "confidence" : "eight",
+            "confidenceNum": 8
         },
         {
-            "confidence": "six",
-            "confidenceNum": 6,
-            "name": "SQL"
+            "name": "SQL",
+            "confidence" : "six",
+            "confidenceNum": 6
         },
         {
-            "confidence": "two",
-            "confidenceNum": 2,
-            "name": "Android"
+            "name": "FreeRTOS / Arduino",
+            "confidence": "four",
+            "confidenceNum": 4
+        },
+        {
+            "name": "Android",
+            "confidence": "three",
+            "confidenceNum": 3
         }
     ],
-    "url": "resume.dakotahj.com"
+    "hobbies": [
+        "Hanging out with my wife",
+        "Walking, biking, kayaking",
+        "Arduino development for home improvement"
+    ],
+    "about": "I'm a continually learning software developer. I've recently discovered a thorough enjoyment of writing software that interacts with the world through sensors. My expertise is in Microsoft .Net based development, I've been spending a lot of time with TypeScript and SharePoint Framework. I've built API's & plant monitoring systems, I've dealt with SQL Server, SSIS, and a plethora of other technologies/frameworks/software’s. Reach out for more details!"
 }
+
