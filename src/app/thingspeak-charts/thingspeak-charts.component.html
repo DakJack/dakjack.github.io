@@ -1,0 +1,9 @@
+<div class=chartWrapper> 
+  <div *ngIf="dataLoaded">
+    <div *ngFor="let chart of chartData">
+      <highcharts-chart [Highcharts]=chart.chart [options]=chart.options style="width: 100%; height: 100px; display: block;">
+      </highcharts-chart>
+    </div>
+
+  </div>
+</div>
