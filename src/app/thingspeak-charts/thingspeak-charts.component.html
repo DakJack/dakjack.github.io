@@ -1,9 +1,16 @@
-<div class=chartWrapper> 
+<div class="chartWrapper"> 
+  <div class="chartHeaderInformation"> 
+    <p>This information is collected over time from my ponty tail palm tree. The data gathered regarding humidity, light, barometric pressure, and temperature.</p> 
+    <br/>
+    <p>Refer to the articles to see the information regarding how these charts were collected and defined.</p>
+  </div>
   <div *ngIf="dataLoaded">
     <div *ngFor="let chart of chartData">
       <highcharts-chart [Highcharts]=chart.chart [options]=chart.options style="width: 100%; height: 100px; display: block;">
       </highcharts-chart>
     </div>
-
+  </div>
+  <div *ngIf="!dataLoaded" class="centered">
+    <p>data loading...</p>
   </div>
 </div>

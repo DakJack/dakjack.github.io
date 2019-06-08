@@ -1,3 +1,10 @@
-<p>
-  rtf-loader works!
-</p>
+<div class="articles">
+  <div class="articlesHeader">
+    <p>This section is of written articles of the shenanigans  I have done regarding technology.</p>
+    <p>They are most likely not going to update often.</p>
+  </div>
+  <div *ngFor="let article of htmlArticles" class="article">
+    <h1 class="header">{{article.title}}</h1>
+    <div [innerHTML]="article.body" class="article"></div>
+  </div>
+</div>

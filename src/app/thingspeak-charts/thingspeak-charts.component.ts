@@ -10,7 +10,7 @@ import * as Highcharts from 'highcharts';
 export class ThingspeakChartsComponent implements OnInit {
   private groupedData: any;
   private channelData: any[] = [];
-  private dataLoaded: boolean = false;
+  public dataLoaded: boolean = false;
   private url: string = 'https://api.thingspeak.com/channels/{{channel_id}}/feeds.json?api_key={{channel_key}}&results=1500';
   private channels: any[] = [ { id: "686886", key: "8X5MFI6TH6PFFSHB"}, { id: "719733", key: "C1UHDHGSYC10VBJU"}];
   private chartData: Object[] = [];

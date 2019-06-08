@@ -10,7 +10,7 @@ import { CVComponent } from './cv/cv.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { HighchartsChartComponent } from 'highcharts-angular';
+import { HighchartsChartModule } from 'highcharts-angular';
 import { ThingspeakChartsComponent } from './thingspeak-charts/thingspeak-charts.component';
 import { RtfLoaderComponent } from './rtf-loader/rtf-loader.component';
 
@@ -19,7 +19,7 @@ import { RtfLoaderComponent } from './rtf-loader/rtf-loader.component';
     AppComponent,
     HomePageComponent,
     CVComponent,
-    HighchartsChartComponent,
+    //HighchartsChartComponent,
     ThingspeakChartsComponent,
     RtfLoaderComponent
   ],
@@ -27,6 +27,7 @@ import { RtfLoaderComponent } from './rtf-loader/rtf-loader.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
