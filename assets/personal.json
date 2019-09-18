@@ -59,11 +59,6 @@
             "name": "C# .Net, VB .Net"
         },
         {
-            "confidence": "five",
-            "confidenceNum": 4,
-            "name": "C, C++"
-        },
-        {
             "confidence": "nine",
             "confidenceNum": 9,
             "name": "JavaScript"
